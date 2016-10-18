@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd ~/git/python/
-
-git init && git add . && git commit -m 'test' && git push -u origin master
+echo 'Summary'
+read summary
+git init && git add . && git commit -m '$summary' && git push -u origin master
 
